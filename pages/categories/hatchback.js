@@ -1,7 +1,14 @@
-import React from "react";
-
+import CarsList from "../../components/templates/CarsList";
+import carsData from "../../data/carsData";
 function Hatchback() {
-  return <div>Hatchback</div>;
+	const hatchbackList = carsData.filter(
+		(item) => item.category === "hatchback"
+	);
+	return (
+		<div>
+			<CarsList data={hatchbackList} />
+		</div>
+	);
 }
 
 export default Hatchback;
