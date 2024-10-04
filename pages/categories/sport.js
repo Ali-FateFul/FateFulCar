@@ -1,7 +1,14 @@
-import React from "react";
-
+import CarsList from "../../components/templates/CarsList";
+import carsData from "../../data/carsData";
 function Sport() {
-  return <div>Sport</div>;
+	const sportList = carsData.filter(
+		(item) => item.category === "sport"
+	);
+	return (
+		<div>
+			<CarsList data={sportList} />
+		</div>
+	);
 }
 
 export default Sport;
