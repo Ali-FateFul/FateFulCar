@@ -1,4 +1,4 @@
-import styles from "./Caegories.module.css";
+import styles from "./Categories.module.css";
 
 import Sedan from "../icons/Sedan";
 import Suv from "../icons/Suv";
