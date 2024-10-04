@@ -1,3 +1,4 @@
+import Categories from "../../components/module/Categories";
 import CarsPage from "../../components/templates/CarsPage";
 
 import carsData from "../../data/carsData";
@@ -5,6 +6,7 @@ import carsData from "../../data/carsData";
 function cars() {
 	return (
 		<div>
+			<Categories />
 			<CarsPage data={carsData} />
 		</div>
 	);
